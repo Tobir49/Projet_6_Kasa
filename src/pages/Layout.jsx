@@ -1,20 +1,23 @@
+import "./layout.css";
 import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
     <>
-    <header>
-        <nav>
-            <ul>
-            <li>
-                <Link to="/home">Home</Link>
+      <header>
+        <nav className="header-nav">
+          <img src=".../pictures/logo.png" alt="Logo de Kasa" className="logo-kasa" />
+          <ul className="nav-banner">
+            <li className="li-banner">
+                <Link to="/home" className="a-header">Home</Link>
             </li>
-            <li>
-                <Link to="/about">About</Link>
+            <li className="li-banner">
+                <Link to="/about" className="a-header">About</Link>
             </li>
-            </ul>
+          </ul>
         </nav>
       </header>
+
       <Outlet />
     </>
   )
