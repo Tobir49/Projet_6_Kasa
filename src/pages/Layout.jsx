@@ -5,7 +5,6 @@ const Layout = () => {
     <>
     <header>
         <nav>
-            <img src=".../pictures/logo.png" alt="Logo de Kasa" />
             <ul>
             <li>
                 <Link to="/home">Home</Link>
@@ -16,7 +15,6 @@ const Layout = () => {
             </ul>
         </nav>
       </header>
-
       <Outlet />
     </>
   )
