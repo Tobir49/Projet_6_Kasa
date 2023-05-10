@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// CSS
 import './assets/index.css';
-// React Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// Importations des différentes routes 
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
+
 
 /////////Routes pour les différentes pages\\\\\\\\\\ 
 export default function App() {
