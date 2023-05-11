@@ -4,10 +4,6 @@
     margin-top: 1em;
 }
 
-.logo-kasa{
-    margin: 1em 0em 0em 3em;
-}
-
 .nav-banner{
     display: flex;
     margin-right: 3em;
@@ -23,7 +19,7 @@
 }
 
 .li-banner{
-    margin: 0.5em 0em 0em 3em;
+    margin: 0.5em 2em 0em 3em;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
