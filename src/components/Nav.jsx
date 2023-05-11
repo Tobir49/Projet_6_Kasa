@@ -1,4 +1,5 @@
 import "./nav.css";
+import Logo from "./Logo";
 import { Outlet, Link } from "react-router-dom";
 
 const Nav = () => {
@@ -6,12 +7,13 @@ const Nav = () => {
     <>
       <header>
         <nav className="header-nav">
+          <Logo />
           <ul className="nav-banner">
             <li className="li-banner">
-                <Link to="/home" className="a-header">Home</Link>
+                <Link to="/home" className="a-header">Accueil</Link>
             </li>
             <li className="li-banner">
-                <Link to="/about" className="a-header">About</Link>
+                <Link to="/about" className="a-header">À propos</Link>
             </li>
           </ul>
         </nav>
