@@ -1,6 +1,6 @@
 import React from 'react';
 import banner from '../images/banner_mountain.jpg';
-import "./banner.css";
+import "./styles/banner.css";
 
 function Logo() {
     return (

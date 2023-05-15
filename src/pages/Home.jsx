@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import "./home.css";
+import "./styles/home.css";
 
 const Home = () => {
     return (
