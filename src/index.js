@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
+import Logements from "./pages/Logements";
 
 
 /////////Routes pour les différentes pages\\\\\\\\\\ 
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />} />
+          <Route path ="logements" element= {<Logements />}/>
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Route>
