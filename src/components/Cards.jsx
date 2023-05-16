@@ -1,15 +1,15 @@
 import React from "react";
 import Card from "./Card";
-import { galleryLogements } from "../data/logements";
+import data from "../data/logements.json";
 
-function Cards (){
+function Cards(){
     return (
         <div>
-        {galleryLogements.map((e) => (
-            <Card key={e.id} id={e.id} title={e.title} cover={e.cover} />
-        ))}
-    </div>
+            {data.map((e) => (
+                <Card key={e.id} id={e.id} title={e.title} cover={e.cover} />
+            ))}   
+        </div>
     );
 }
 
-export default Cards();
+export default Cards;

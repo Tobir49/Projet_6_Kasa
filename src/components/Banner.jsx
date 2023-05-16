@@ -1,14 +1,13 @@
 import React from 'react';
-import banner from '../images/banner_mountain.jpg';
 import "./styles/banner.css";
 
-function Logo() {
+function Banner(props) {
     return (
         <div className='div-banner'>
-            <img src={banner} alt="Bannière Kasa" className='home-banner' />
-            <p className='banner-title'>Chez vous, partout et ailleurs</p>
+            <img src={props.src} alt={props.alt} className='banner' />
+            {props.title ? <p className='banner-title'>{props.title}</p> : ""}
         </div>
     );
   }
   
-  export default Logo;
+  export default Banner;
