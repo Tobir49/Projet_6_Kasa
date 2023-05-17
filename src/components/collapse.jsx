@@ -11,6 +11,7 @@ function Collapse(props){
     ) : (
         <div>
             <h3 onClick={() => isOpen(true)}>{props.title}</h3>
+            <p></p>
         </div>
     )
 }
