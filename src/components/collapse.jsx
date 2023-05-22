@@ -1,17 +1,20 @@
 import React from "react";
 import { useState } from 'react';
+import "./styles/collapse.css";
 
 function Collapse(props){
-    const isOpen = useState(false);
-    return isOpen ? (
-        <div>
-            <h3 onClick={() => isOpen(false)}>{props.title}</h3>
-            <p>{props.text}</p>
-        </div>
-    ) : (
-        <div>
-            <h3 onClick={() => isOpen(true)}>{props.title}</h3>
-            <p></p>
+    //Stackoverflow
+    const [isLoading, setIsLoading] = useState(false)
+
+    const buttonHandler = () => {
+        setIsLoading(current => !current)
+        console.log(isLoading)
+    }
+
+    return (
+        <div className="div-one-collapse">
+            <h3 onClick={buttonHandler} className="collapse-title">{props.title}</h3>
+            <p className="collapse-text">{props.text}</p>
         </div>
     )
 }
