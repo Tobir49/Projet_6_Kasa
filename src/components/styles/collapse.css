@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em 0em 1em 0em;
+    margin: 2em 0em 0em 0em;
 }
 
 .div-title-collapse{
@@ -21,7 +21,7 @@
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    margin: 0.5em 0em 1.4em 0em;
+    margin: 0.5em 0em 0.8em 0em;
 }
 
 .chevron-up{
@@ -38,7 +38,7 @@
     background-color: #F6F6F6;
     width: 70%;
     padding: 1em 0.5em 0.5em 0.5em;
-    margin-top: -1em;
+    margin-top: 0em;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
