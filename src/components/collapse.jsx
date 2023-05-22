@@ -3,12 +3,10 @@ import { useState } from 'react';
 import "./styles/collapse.css";
 
 function Collapse(props){
-    //Stackoverflow
     const [open, setOpen] = useState(false)
 
     const buttonHandler = () => {
         setOpen(current => !current)
-        console.log(open)
     }
 
     return (
