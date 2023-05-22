@@ -6,7 +6,7 @@ function Card(props) {
     return (
         <div className='card'>
             <Link to={`/logements/${props.id}`} className='link'>
-                <div>
+                <div className='div-card'>
                     <img src={props.cover} alt="logements" className='img-card'/>
                     <span className='card-title'>{props.title}</span>
                 </div>
