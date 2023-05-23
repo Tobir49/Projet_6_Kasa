@@ -6,7 +6,7 @@
 
 .nav-banner{
     display: flex;
-    width: 60%;
+    width: 30%;
 }
 
 .a-header{
@@ -23,4 +23,15 @@
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .nav-banner{
+        width: 37%;
+    }
+
+    .li-banner{
+        margin: 0.5em 2em 0em 2em;
+    }
 }
