@@ -26,7 +26,7 @@
 }
 
 
-@media screen and (min-width:768px) and (max-width:1200px){
+@media screen and (min-width:750px) and (max-width:1200px){
     .nav-banner{
         width: 37%;
     }
@@ -37,15 +37,16 @@
 }
 
 /* Pour les téléphones grand écran */
-@media screen and (min-width:360px) and (max-width:768px){
+@media screen and (min-width:360px) and (max-width:750px){
     .nav-banner{
         width: 50%;
         height: 2.2em;
     }
 
     .li-banner{
-        margin: 0.5em 0em 0em 2em;
+        margin: 0.5em 0em 0em 1em;
         font-size: 14px;
+        text-transform: uppercase;
     }
 }
 
@@ -53,11 +54,13 @@
 @media screen and (max-width:360px){
     .nav-banner{
         width: 80%;
-        height: 5em;
+        height: 4em;
+        margin-left: -1em;
     }
 
     .li-banner{
-        margin: 0.5em 0em 0em 1.2em;
+        margin: 0.5em 0em 0em 1em;
         font-size: 13px;
+        text-transform: uppercase;
     }
 }

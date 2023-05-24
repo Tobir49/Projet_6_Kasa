@@ -5,17 +5,6 @@
     margin: 2em 0em 0em 0em;
 }
 
-.div-title-collapse{
-    width: 70%;
-    background-color: #FF6060;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 0em 0.5em 0em 0.5em;
-    border-radius: 5px;
-}
-
 .collapse-title{
     color: white;
     font-weight: 400;
@@ -30,19 +19,6 @@
     margin-top: 0.4em;
 }
 
-.collapse-text{
-    width: 70%;
-    color: #FF6060;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    background-color: #F6F6F6;
-    padding: 1em 0.5em 0.5em 0.5em;
-    margin-top: 0em;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
 @media screen and (min-width:768px) and (max-width:1200px){
 
     .collapse-title{
@@ -53,9 +29,5 @@
     .chevron-up{
         font-size: 17px;
         margin-top: 0.6em;
-    }
-    
-    .collapse-text{
-        font-size: 15px;
     }
 }
