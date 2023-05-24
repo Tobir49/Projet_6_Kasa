@@ -2,11 +2,12 @@ import React from "react";
 import Banner from "../components/Banner";
 import bannerabout from '../images/banner_about.jpg';
 import Collapse from "../components/Collapse";
+import "../components/styles/collapse.css";
 
 
 function About() {
   return (
-    <div className="div-home">
+    <div>
       <Banner title="" src={bannerabout} alt="Bannière about"/>
       <div>
         <Collapse title="Fiabilité" 

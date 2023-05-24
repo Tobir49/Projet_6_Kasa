@@ -35,3 +35,16 @@
         margin: 0.5em 2em 0em 2em;
     }
 }
+
+/* Pour les téléphones grand écran */
+@media screen and (min-width:360px) and (max-width:768px){
+    .nav-banner{
+        width: 50%;
+        height: 2.2em;
+    }
+
+    .li-banner{
+        margin: 0.5em 0em 0em 2em;
+        font-size: 14px;
+    }
+}

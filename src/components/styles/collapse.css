@@ -6,8 +6,8 @@
 }
 
 .div-title-collapse{
-    background-color: #FF6060;
     width: 70%;
+    background-color: #FF6060;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -24,19 +24,19 @@
     margin: 0.5em 0em 0.8em 0em;
 }
 
-.chevron-up{
+.chevron{
     color: white;
     font-size: 22px;
     margin-top: 0.4em;
 }
 
 .collapse-text{
+    width: 70%;
     color: #FF6060;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     background-color: #F6F6F6;
-    width: 70%;
     padding: 1em 0.5em 0.5em 0.5em;
     margin-top: 0em;
     border-bottom-left-radius: 5px;

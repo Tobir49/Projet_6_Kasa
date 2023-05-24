@@ -13,10 +13,12 @@ function Collapse(props){
         <div className="div-one-collapse">
             <div className="div-title-collapse" onClick={buttonHandler}>
                 <h3 className="collapse-title">{props.title}</h3>
-                <i class="fa-solid fa-chevron-up chevron-up"></i>
+                {open ? 
+                <i className="fa-solid fa-chevron-up chevron"></i> : 
+                <i className="fa-solid fa-chevron-down chevron"></i>}
             </div>
             {open && (
-                <p className="collapse-text">{props.text}</p>
+                    <p className="collapse-text">{props.text}</p>
             )}           
         </div>
     )
