@@ -48,3 +48,16 @@
         font-size: 14px;
     }
 }
+
+/* Pour les téléphones petit écran */
+@media screen and (max-width:360px){
+    .nav-banner{
+        width: 80%;
+        height: 5em;
+    }
+
+    .li-banner{
+        margin: 0.5em 0em 0em 1.2em;
+        font-size: 13px;
+    }
+}

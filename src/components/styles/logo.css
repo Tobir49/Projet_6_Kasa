@@ -13,11 +13,20 @@
 }
 
 /* Pour les téléphones */
-@media screen and (max-width:768px){
+@media screen and (min-width:360px) and (max-width:768px){
 
     .logo-header{
         width: 6.2em;
         height: 55%;
+        margin-left: 1em;
+    }
+}
+
+/* Pour les téléphones petit écran */
+@media screen and (max-width:360px){
+    .logo-header{
+        width: 5.2em;
+        height: 35%;
         margin-left: 1em;
     }
 }
