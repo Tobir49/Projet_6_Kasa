@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import data from "../data/logements.json";
 import Error from "../pages/Error";
 import PlaceTitle from "../components/PlaceTitle";
+import PlaceTags from "../components/PlaceTags";
+import PlaceHost from "../components/PlaceHost";
 
 function Logements() {
   //Le useParams nous sera utile pour les routes dans le fichier index.js (ça nous permet de donner aux enfants(id) d'hériter des 
@@ -17,9 +19,11 @@ function Logements() {
 
   return (
     <div>
-      {data.map((place) => (
         <PlaceTitle title={place.title} location={place.location} />
-      ))}
+        <div>
+          <PlaceTags tags={place.tags}/>
+          {/* < PlaceHost name={place.host.name} picture={place.host.picture}/> */}
+        </div>
     </div>
     );
 };

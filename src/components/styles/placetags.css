@@ -1,0 +1,10 @@
+.place-tags{
+    background-color: #FF6060;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 10px;
+    margin-right: 1em;
+}
