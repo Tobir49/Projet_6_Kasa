@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/nav.css";
 import Logo from "./Logo";
 import { Outlet, Link } from "react-router-dom";

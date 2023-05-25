@@ -1,3 +1,4 @@
+import React from "react";
 import footer from '../images/footer.webp';
 import "./styles/footer.css";
 
