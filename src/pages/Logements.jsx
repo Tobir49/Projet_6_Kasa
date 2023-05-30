@@ -20,24 +20,28 @@ function Logements() {
 
   return (
     <div>
-      <PlaceTitle title={place.title} location={place.location} />
-
       <div>
-        {place.tags.map(tag => <PlaceTags tags={tag} />)}
-
+        {/* Titre */}
+        <PlaceTitle title={place.title} location={place.location} />
+        {/* Propriétaire */}
         <PlaceHost host ={place.host}/>
       </div>
 
-      <div className="div-collapse-places">
-        <Collapse title="Description"
-        text={place.description}
-        classTitle="places-div-title-collapse"
-        classText="places-collapse-text"/>
+      <div>
+        {/* Tags */}
+        {place.tags.map(tag => <PlaceTags tags={tag} />)}
+        <div className="div-collapse-places">
+          {/* Collapse */}
+          <Collapse title="Description"
+          text={place.description}
+          classTitle="places-div-title-collapse"
+          classText="places-collapse-text"/>
 
-        <Collapse title="Équipements"
-        text={place.equipments}
-        classTitle="places-div-title-collapse"
-        classText="places-collapse-text"/>
+          <Collapse title="Équipements"
+          text={place.equipments}
+          classTitle="places-div-title-collapse"
+          classText="places-collapse-text"/>
+        </div>
       </div>
     </div>
     );

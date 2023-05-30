@@ -1,0 +1,13 @@
+.host{
+    display: flex;
+}
+
+.place-host-picture{
+    border-radius: 5em;
+}
+
+.place-host-name{
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6060;
+    font-weight: 500;
+}
