@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 // import { Navigate } from "react-router-dom";
 
 function Layout() {
-  return ( 
+  return (
     <div>
       <Nav />
       <Footer></Footer>
       {/* <Navigate to="home" replace={true}/> */}
-    </div>    
-)
+    </div>
+  );
 }
 
 export default Layout;

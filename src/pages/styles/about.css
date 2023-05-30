@@ -1,43 +1,43 @@
-.about-div-title-collapse{
-    width: 70%;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 0em 0.5em 0em 0.5em;
-    border-radius: 5px;
+.about-div-title-collapse {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0em 0.5em 0em 0.5em;
+  border-radius: 5px;
 }
 
-.about-collapse-text{
-    width: 70%;
-    color: #FF6060;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    background-color: #F6F6F6;
-    padding: 1em 0.5em 0.5em 0.5em;
-    margin-top: 0em;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.about-collapse-text {
+  width: 70%;
+  color: #ff6060;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #f6f6f6;
+  padding: 1em 0.5em 0.5em 0.5em;
+  margin-top: 0em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-@media screen and (min-width:750px) and (max-width:1200px){
-    .about-collapse-text{
-        font-size: 15px;
-        padding-bottom: 1.5em;
-    }
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .about-collapse-text {
+    font-size: 15px;
+    padding-bottom: 1.5em;
+  }
 }
 
-@media screen and (max-width:750px){
-    .about-div-title-collapse{
-        width: 85%;
-        height: 2.3em;
-        font-size: 16px ;
-        padding-bottom: 2px;
-    }
-    .about-collapse-text{
-        width: 85%;
-        font-size: 13px;
-        padding-bottom: 3em;
-    }
+@media screen and (max-width: 750px) {
+  .about-div-title-collapse {
+    width: 85%;
+    height: 2.3em;
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  .about-collapse-text {
+    width: 85%;
+    font-size: 13px;
+    padding-bottom: 3em;
+  }
 }

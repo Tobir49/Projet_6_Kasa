@@ -11,10 +11,14 @@ const Nav = () => {
           <Logo />
           <ul className="nav-banner">
             <li className="li-banner">
-                <Link to="/home" className="a-header">Accueil</Link>
+              <Link to="/home" className="a-header">
+                Accueil
+              </Link>
             </li>
             <li className="li-banner">
-                <Link to="/about" className="a-header">À propos</Link>
+              <Link to="/about" className="a-header">
+                À propos
+              </Link>
             </li>
           </ul>
         </nav>
@@ -22,7 +26,7 @@ const Nav = () => {
 
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Nav;

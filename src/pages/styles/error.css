@@ -1,85 +1,82 @@
-.div-error{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -5em;
+.div-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5em;
 }
 
-.error-title{
-    color: #FF6060;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 10em;
-    margin-bottom: 0em;
+.error-title {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 10em;
+  margin-bottom: 0em;
 }
 
-.error-subtitle{
-    color: #FF6060;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
+.error-subtitle {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
-.error-link{
-    color: #FF6060;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-top: 5em;
+.error-link {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 5em;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .error-title {
+    font-size: 7em;
+    margin: 1em 0em 0em 0em;
+  }
 
-@media screen and (min-width:768px) and (max-width:1024px){
-    .error-title{
-        font-size: 7em;
-        margin: 1em 0em 0em 0em;
-    }
+  .error-subtitle {
+    font-size: 1em;
+  }
 
-    .error-subtitle{
-        font-size: 1em;
-    }
-
-    .error-link{
-        margin-top: 4em;
-    }
+  .error-link {
+    margin-top: 4em;
+  }
 }
 
 /* Pour les téléphones */
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .div-error {
+    width: 100%;
+  }
 
-    .div-error{
-        width: 100%;
-    }
+  .error-title {
+    font-size: 5em;
+    margin: 2em 0em 0em 0em;
+  }
 
-    .error-title{
-        font-size: 5em;
-        margin: 2em 0em 0em 0em;
-    }
+  .error-subtitle {
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+  }
 
-    .error-subtitle{
-        font-size: 15px;
-        width: 80%;
-        text-align: center;
-    }
-
-    .error-link{
-        font-size: 15px;
-        margin-top: 3em;    
-    }
+  .error-link {
+    font-size: 15px;
+    margin-top: 3em;
+  }
 }
 
 /* Pour les téléphones petit écran */
-@media screen and (max-width:320px){
+@media screen and (max-width: 320px) {
+  .error-title {
+    font-size: 4em;
+    margin: 1.2em 0em 0em 0em;
+  }
 
-    .error-title{
-        font-size: 4em;
-        margin: 1.2em 0em 0em 0em;
-    }
+  .error-subtitle {
+    font-size: 13px;
+  }
 
-    .error-subtitle{
-        font-size: 13px;
-    }
-
-    .error-link{
-        font-size: 13px;
-    }
+  .error-link {
+    font-size: 13px;
+  }
 }

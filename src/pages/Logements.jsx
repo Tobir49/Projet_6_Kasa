@@ -8,46 +8,51 @@ import PlaceTags from "../components/PlaceTags";
 import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
 
-
 function Logements() {
-  const {id} = useParams();
-  const place = data.find((place) => place.id === id) //Afficher une page tant qu'il y a un id différent dans le fichier json
+  const { id } = useParams();
+  const place = data.find((place) => place.id === id); //Afficher une page tant qu'il y a un id différent dans le fichier json
 
   //Important de l'écrire, car même si un id n'existe pas, une page d'erreur (react et non Error.jsx) s'affichera
-  if (!place){
-    return <Error/>
+  if (!place) {
+    return <Error />;
   }
 
   return (
     <div>
-      <div>
+      <div className="div-title-and-host">
         {/* Titre */}
         <PlaceTitle title={place.title} location={place.location} />
         {/* Propriétaire */}
-        <PlaceHost host ={place.host}/>
+        <PlaceHost host={place.host} />
       </div>
 
       <div>
         <div className="tags-div">
-        {/* Tags */}
-        {place.tags.map(tag => <PlaceTags tags={tag} />)}
+          {/* Tags */}
+          {place.tags.map((tag) => (
+            <PlaceTags tags={tag} />
+          ))}
         </div>
 
         <div className="div-collapse-places">
           {/* Collapse */}
-          <Collapse title="Description"
-          text={place.description}
-          classTitle="places-div-title-collapse"
-          classText="places-collapse-text"/>
+          <Collapse
+            title="Description"
+            text={place.description}
+            classTitle="places-div-title-collapse"
+            classText="places-collapse-text"
+          />
 
-          <Collapse title="Équipements"
-          text={place.equipments}
-          classTitle="places-div-title-collapse"
-          classText="places-collapse-text"/>
+          <Collapse
+            title="Équipements"
+            text={place.equipments}
+            classTitle="places-div-title-collapse"
+            classText="places-collapse-text"
+          />
         </div>
       </div>
     </div>
-    );
-};
-  
+  );
+}
+
 export default Logements;

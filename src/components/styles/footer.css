@@ -1,43 +1,41 @@
-.footer{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3em 0em 1em 0em;
-    /* Pour ne pas avoir de marge sur les côtés */
-    margin: 2.3em -0.47em -0.47em -0.47em;
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0em 1em 0em;
+  /* Pour ne pas avoir de marge sur les côtés */
+  margin: 2.3em -0.47em -0.47em -0.47em;
 }
 
-.footer-logo{
-    width: 6em;
-    height: 2.3em;
+.footer-logo {
+  width: 6em;
+  height: 2.3em;
 }
 
-.footer-subtitle{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-top: 2em;
+.footer-subtitle {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 2em;
 }
 
 /* Pour les téléphones grand écran */
-@media screen and (min-width:360px) and (max-width:768px){
-
-    .footer{
-        padding: 2em 0em 1em 0em;
-    }
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .footer {
+    padding: 2em 0em 1em 0em;
+  }
 }
 
 /* Pour les téléphones petit écran */
-@media screen and (max-width:360px){
+@media screen and (max-width: 360px) {
+  .footer {
+    padding: 1em 0em 1em 0em;
+  }
 
-    .footer{
-        padding: 1em 0em 1em 0em;
-    }
-
-    .footer-logo{
-        width: 4.5em;
-        height: 2em;
-        margin-top: 1em;
-    }
+  .footer-logo {
+    width: 4.5em;
+    height: 2em;
+    margin-top: 1em;
+  }
 }

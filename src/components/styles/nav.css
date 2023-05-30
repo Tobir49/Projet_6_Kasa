@@ -1,66 +1,65 @@
-.header-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
-.nav-banner{
-    display: flex;
-    width: 30%;
+.nav-banner {
+  display: flex;
+  width: 30%;
 }
 
-.a-header{
-    text-decoration: none;
-    color: #FF6060;
+.a-header {
+  text-decoration: none;
+  color: #ff6060;
 }
 
-.a-header:hover{
-    border-bottom: 1px solid #FF6060;
+.a-header:hover {
+  border-bottom: 1px solid #ff6060;
 }
 
-.li-banner{
-    margin: 1.5em 3em 0em 3em;
-    list-style-type: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+.li-banner {
+  margin: 1.5em 3em 0em 3em;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .nav-banner {
+    width: 37%;
+  }
 
-@media screen and (min-width:750px) and (max-width:1200px){
-    .nav-banner{
-        width: 37%;
-    }
-
-    .li-banner{
-        margin: 0.5em 2em 0em 2em;
-    }
+  .li-banner {
+    margin: 0.5em 2em 0em 2em;
+  }
 }
 
 /* Pour les téléphones grand écran */
-@media screen and (min-width:360px) and (max-width:750px){
-    .nav-banner{
-        width: 50%;
-        height: 2.2em;
-    }
+@media screen and (min-width: 360px) and (max-width: 750px) {
+  .nav-banner {
+    width: 50%;
+    height: 2.2em;
+  }
 
-    .li-banner{
-        margin: 0.5em 0em 0em 1em;
-        font-size: 14px;
-        text-transform: uppercase;
-    }
+  .li-banner {
+    margin: 0.5em 0em 0em 1em;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 }
 
 /* Pour les téléphones petit écran */
-@media screen and (max-width:360px){
-    .nav-banner{
-        width: 80%;
-        height: 4em;
-        margin-left: -1em;
-    }
+@media screen and (max-width: 360px) {
+  .nav-banner {
+    width: 80%;
+    height: 4em;
+    margin-left: -1em;
+  }
 
-    .li-banner{
-        margin: 0.5em 0em 0em 1em;
-        font-size: 13px;
-        text-transform: uppercase;
-    }
+  .li-banner {
+    margin: 0.5em 0em 0em 1em;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
 }
