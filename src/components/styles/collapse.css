@@ -19,6 +19,10 @@
     margin-top: 0.4em;
 }
 
+.classColors{
+    background-color: #FF6060;
+}
+
 @media screen and (min-width:768px) and (max-width:1200px){
 
     .collapse-title{

@@ -5,7 +5,7 @@ function PlaceHost(props){
     return(
         <div>
             <p className="place-host-name">{props.host.name}</p>
-            <p className="place-host-picture">{props.host.picture}</p>
+            <img className="place-host-picture" src={props.host.picture} alt="host" />
         </div>
     )
 }

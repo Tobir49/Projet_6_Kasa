@@ -1,0 +1,29 @@
+.div-collapse-places{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.places-collapse-text{
+    width: 70%;
+    color: #FF6060;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #F6F6F6;
+    padding: 1em 0.5em 0.5em 0.5em;
+    margin-top: 0em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.places-div-title-collapse{
+    width: 70%;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0em 0.5em 0em 0.5em;
+    border-radius: 5px;
+}
+

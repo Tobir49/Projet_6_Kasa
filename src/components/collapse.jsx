@@ -11,7 +11,7 @@ function Collapse(props){
 
     return (
         <div className="div-one-collapse">
-            <div className={props.classTitle} onClick={buttonHandler}>
+            <div className={`${props.classTitle} classColors`} onClick={buttonHandler}>
                 <h3 className="collapse-title">{props.title}</h3>
                 {open ? 
                 <i className="fa-solid fa-chevron-up chevron"></i> : 
@@ -19,6 +19,7 @@ function Collapse(props){
             </div>
             {open && (
                     <p className={props.classText}>{props.text}</p>
+                    // Liste
             )}           
         </div>
     )
