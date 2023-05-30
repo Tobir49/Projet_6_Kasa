@@ -28,8 +28,11 @@ function Logements() {
       </div>
 
       <div>
+        <div className="tags-div">
         {/* Tags */}
         {place.tags.map(tag => <PlaceTags tags={tag} />)}
+        </div>
+
         <div className="div-collapse-places">
           {/* Collapse */}
           <Collapse title="Description"
