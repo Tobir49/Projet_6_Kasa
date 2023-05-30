@@ -1,24 +1,11 @@
 .about-div-title-collapse {
   width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  cursor: pointer;
   padding: 0em 0.5em 0em 0.5em;
-  border-radius: 5px;
 }
 
 .about-collapse-text {
   width: 70%;
-  color: #ff6060;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  background-color: #f6f6f6;
   padding: 1em 0.5em 0.5em 0.5em;
-  margin-top: 0em;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {

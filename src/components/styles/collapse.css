@@ -19,8 +19,25 @@
   margin-top: 0.4em;
 }
 
-.classColors {
+/* CSS par défaut du titre et du texte du collapse  */
+.classDefaultUseTitleCollapse {
   background-color: #ff6060;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.classDefaultUseTextCollapse {
+  color: #ff6060;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #f6f6f6;
+  margin-top: 0em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
