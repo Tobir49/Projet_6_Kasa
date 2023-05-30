@@ -30,7 +30,7 @@ function Logements() {
         <div className="tags-div">
           {/* Tags */}
           {place.tags.map((tag) => (
-            <PlaceTags tags={tag} />
+            <PlaceTags key={tag} tags={tag} />
           ))}
         </div>
 

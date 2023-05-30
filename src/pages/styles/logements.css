@@ -9,18 +9,15 @@
 .div-collapse-places {
   display: flex;
   justify-content: space-between;
-  width: 90%;
 }
 
 /* Collapse titre et texte  */
 .places-collapse-text {
-  width: 70%;
-  padding: 1em 0.5em 0.5em 0.5em;
+  width: 50%;
 }
 
 .places-div-title-collapse {
-  width: 70%;
-  padding: 0em 0.5em 0em 0.5em;
+  width: 50%;
 }
 
 /* Tags  */

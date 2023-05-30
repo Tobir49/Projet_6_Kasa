@@ -26,7 +26,7 @@ function Collapse(props) {
         <p className={`${props.classText} classDefaultUseTextCollapse`}>
           {props.text}
         </p>
-        // Liste
+        // Liste pour les équipements
       )}
     </div>
   );
