@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles/placerank.css";
 
-function PlaceRank() {
+function PlaceRank(props) {
   return (
     <div>
-      <i className="fa-solid fa-star base-color"></i>
+      <i className={`fa-solid fa-star ranking ${props.color}`}></i>
     </div>
   );
 }

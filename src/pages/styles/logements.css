@@ -15,6 +15,9 @@
   display: flex;
   justify-content: space-between;
 }
+.div-rank {
+  display: flex;
+}
 
 /* Collapse div  */
 .div-collapse-places {
