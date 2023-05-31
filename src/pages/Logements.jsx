@@ -7,6 +7,7 @@ import PlaceTitle from "../components/PlaceTitle";
 import PlaceTags from "../components/PlaceTags";
 import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
+import PlaceRank from "../components/PlaceRank";
 
 function Logements() {
   const { id } = useParams();
@@ -19,37 +20,38 @@ function Logements() {
 
   return (
     <div>
-      <div className="div-title-and-host">
-        {/* Titre */}
-        <PlaceTitle title={place.title} location={place.location} />
-        {/* Propriétaire */}
-        <PlaceHost host={place.host} />
+      <div>
+        <div className="div-title-and-host">
+          <PlaceTitle title={place.title} location={place.location} />
+          <PlaceHost host={place.host} />
+        </div>
+        <div className="div-rank-tags">
+          <div className="tags-div">
+            {place.tags.map((tag) => (
+              <PlaceTags key={tag} tags={tag} />
+            ))}
+          </div>
+          <PlaceRank />
+          <PlaceRank />
+          <PlaceRank />
+          <PlaceRank />
+          <PlaceRank />
+        </div>
       </div>
 
-      <div>
-        <div className="tags-div">
-          {/* Tags */}
-          {place.tags.map((tag) => (
-            <PlaceTags key={tag} tags={tag} />
-          ))}
-        </div>
-
-        <div className="div-collapse-places">
-          {/* Collapse */}
-          <Collapse
-            title="Description"
-            text={place.description}
-            classTitle="places-div-title-collapse"
-            classText="places-collapse-text"
-          />
-
-          <Collapse
-            title="Équipements"
-            text={place.equipments}
-            classTitle="places-div-title-collapse"
-            classText="places-collapse-text"
-          />
-        </div>
+      <div className="div-collapse-places">
+        <Collapse
+          title="Description"
+          text={place.description}
+          classTitle="places-div-title-collapse"
+          classText="places-collapse-text"
+        />
+        <Collapse
+          title="Équipements"
+          text={place.equipments}
+          classTitle="places-div-title-collapse"
+          classText="places-collapse-text"
+        />
       </div>
     </div>
   );

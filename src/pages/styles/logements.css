@@ -5,6 +5,17 @@
   margin: 1em;
 }
 
+/* Tags et rank  */
+.tags-div {
+  display: flex;
+  width: 100%;
+}
+
+.div-rank-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Collapse div  */
 .div-collapse-places {
   display: flex;
@@ -18,9 +29,4 @@
 
 .places-div-title-collapse {
   width: 50%;
-}
-
-/* Tags  */
-.tags-div {
-  display: flex;
 }

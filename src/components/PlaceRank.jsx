@@ -1,9 +1,10 @@
 import React from "react";
+import "./styles/placerank.css";
 
 function PlaceRank() {
   return (
     <div>
-      <i class="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star base-color"></i>
     </div>
   );
 }
