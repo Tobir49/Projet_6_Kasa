@@ -85,7 +85,6 @@
     background-color: white;
     width: 90%;
     flex-direction: column;
-    align-items: center;
     margin: -1em 0em 0em 0em;
   }
 
@@ -103,9 +102,9 @@
 
   .card-title {
     font-size: 15px;
-    margin: -2.8em 0em 0em 2em;
+    margin-left: 3em;
     width: 70%;
-    align-self: flex-start;
+    text-align: start;
   }
 }
 
@@ -115,8 +114,7 @@
     background-color: white;
     width: 90%;
     flex-direction: column;
-    align-items: center;
-    margin: -1em 0em 0em 0em;
+    margin: -1em 1em 0em 0em;
   }
 
   .div-card {
@@ -132,9 +130,9 @@
   }
 
   .card-title {
-    font-size: 15px;
-    margin: -2.8em 0em 0em 2em;
+    font-size: 12px;
+    margin-left: 3em;
     width: 70%;
-    align-self: flex-start;
+    text-align: start;
   }
 }

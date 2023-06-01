@@ -28,7 +28,6 @@
 /* Collapse div  */
 .div-collapse-places {
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
