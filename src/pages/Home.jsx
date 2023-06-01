@@ -11,6 +11,7 @@ function Home() {
         title="Chez vous, partout et ailleurs"
         src={banner}
         alt="Bannière home"
+        classHeight=""
       />
       <Cards />
     </div>

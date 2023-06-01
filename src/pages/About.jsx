@@ -6,8 +6,13 @@ import "./styles/about.css";
 
 function About() {
   return (
-    <div>
-      <Banner title="" src={bannerabout} alt="Bannière about" />
+    <div className="div-about">
+      <Banner
+        title=""
+        src={bannerabout}
+        alt="Bannière about"
+        classHeight="height-mobile"
+      />
       <div>
         <Collapse
           title="Fiabilité"
