@@ -27,7 +27,13 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin: -2.8em 0em 0em 1em;
-  /* background:  linear-gradient(#e66465, #9198e5); */
+  /* background: linear-gradient(black, black); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
 .link {
