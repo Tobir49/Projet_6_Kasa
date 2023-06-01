@@ -27,15 +27,15 @@
 
 /* Collapse div  */
 .div-collapse-places {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 /* Collapse titre et texte  */
 .places-collapse-text {
-  width: 35em;
+  width: 40%;
 }
 
 .places-div-title-collapse {
-  width: 37em;
+  width: 40%;
 }

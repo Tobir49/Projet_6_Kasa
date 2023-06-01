@@ -1,9 +1,11 @@
 .about-div-title-collapse {
   width: 70%;
+  align-self: center;
 }
 
 .about-collapse-text {
   width: 70%;
+  align-self: center;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {
