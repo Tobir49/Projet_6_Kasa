@@ -1,3 +1,9 @@
+/*Marge du logement */
+.width-all {
+  width: 97%;
+  margin-left: 1.5em;
+}
+
 /* Div du titre et du host  */
 .div-title-and-host {
   display: flex;
@@ -22,14 +28,15 @@
 /* Collapse div  */
 .div-collapse-places {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
 /* Collapse titre et texte  */
 .places-collapse-text {
-  width: 50%;
+  width: 35em;
 }
 
 .places-div-title-collapse {
-  width: 50%;
+  width: 37em;
 }

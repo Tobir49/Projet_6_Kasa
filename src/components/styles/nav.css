@@ -14,6 +14,10 @@
   color: #ff6060;
 }
 
+.a-header:focus {
+  border-bottom: 1px solid #ff6060;
+}
+
 .a-header:hover {
   border-bottom: 1px solid #ff6060;
 }
