@@ -21,3 +21,25 @@
     font-size: 14px;
   }
 }
+
+/* Mobile grand écran*/
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .place-title {
+    font-size: 16px;
+    margin: 0em 1em 0em 0em;
+  }
+  .place-location {
+    font-size: 14px;
+  }
+}
+
+/* Mobile petit écran*/
+@media screen and (max-width: 360px) {
+  .place-title {
+    font-size: 15px;
+    margin-left: 0em;
+  }
+  .place-location {
+    font-size: 12px;
+  }
+}

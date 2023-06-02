@@ -37,7 +37,7 @@
 .div-collapse-places {
   display: flex;
   justify-content: space-between;
-  margin: 6em 1em 0em 1em;
+  margin: 4em 1em 0em 1em;
 }
 /* Collapse titre et texte  */
 .places-collapse-text {
@@ -132,6 +132,20 @@
   }
 }
 
-/* Mediaqueries hors collapse pour ordinateur plus petit que 1400px*/
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+/* Mobile grand écran*/
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .host-and-rank {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0em 2em 0em 2em;
+  }
+}
+
+/* Mobile petit écran*/
+@media screen and (max-width: 360px) {
+  .host-and-rank {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0em 2em 0em 2em;
+  }
 }

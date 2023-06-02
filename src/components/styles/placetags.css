@@ -25,3 +25,22 @@
     font-size: 8px;
   }
 }
+
+/* Mobile grand écran*/
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .place-tags {
+    width: 27%;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+}
+
+/* Mobile petit écran*/
+@media screen and (max-width: 360px) {
+  .place-tags {
+    width: 25%;
+    font-size: 6px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
