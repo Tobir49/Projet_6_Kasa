@@ -10,7 +10,7 @@ function Collapse(props) {
   };
 
   return (
-    <div className="div-one-collapse">
+    <div className={props.classFlex}>
       <div
         className={`${props.classTitle} classDefaultUseTitleCollapse`}
         onClick={buttonHandler}
@@ -26,7 +26,6 @@ function Collapse(props) {
         <p className={`${props.classText} classDefaultUseTextCollapse`}>
           {props.text}
         </p>
-        // Liste pour les équipements
       )}
     </div>
   );

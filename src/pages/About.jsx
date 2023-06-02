@@ -18,6 +18,7 @@ function About() {
           title="Fiabilité"
           text="Les annonces postées sur Kasa garantissent une fiabilité totale. 
         Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+          classFlex="div-one-collapse"
           classTitle="about-div-title-collapse"
           classText="about-collapse-text"
         />
@@ -26,6 +27,7 @@ function About() {
           title="Respect"
           text="La bienveillance fait partie des valeurs fondatrices de Kasa. 
         Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          classFlex="div-one-collapse"
           classTitle="about-div-title-collapse"
           classText="about-collapse-text"
         />
@@ -34,6 +36,7 @@ function About() {
           title="Service"
           text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. 
         N'hésitez pas à nous contacter si vous avez la moindre question."
+          classFlex="div-one-collapse"
           classTitle="about-div-title-collapse"
           classText="about-collapse-text"
         />
@@ -44,6 +47,7 @@ function About() {
         chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, 
         cela permet à nos équipes de vérifier que les standards sont bien respectés. 
         Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+          classFlex="div-one-collapse"
           classTitle="about-div-title-collapse"
           classText="about-collapse-text"
         />

@@ -27,15 +27,84 @@
 
 /* Collapse div  */
 .div-collapse-places {
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Collapse titre et texte  */
 .places-collapse-text {
-  width: 40%;
+  width: max(35em);
 }
 
 .places-div-title-collapse {
-  width: 40%;
+  width: max(37em);
+}
+
+/* Taille collapse sur petit écran ordinateur*/
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .places-collapse-text {
+    width: 24em;
+  }
+
+  .places-div-title-collapse {
+    width: 25em;
+  }
+}
+
+/* Taille collapse sur petit ordinateur et tablette*/
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .places-collapse-text {
+    width: 13em;
+  }
+
+  .places-div-title-collapse {
+    width: 14em;
+  }
+}
+
+/* Taille collapse sur tablette*/
+@media screen and (min-width: 450px) and (max-width: 700px) {
+  .places-collapse-text {
+    width: 11em;
+  }
+
+  .places-div-title-collapse {
+    width: 12em;
+  }
+}
+
+/* Taille collapse sur grand et moyen mobile*/
+@media screen and (min-width: 360px) and (max-width: 450px) {
+  .div-collapse-places {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2em;
+  }
+  .places-collapse-text {
+    width: 15em;
+    margin-top: -2em;
+  }
+
+  .places-div-title-collapse {
+    width: 16em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Taille collapse sur petit mobile*/
+@media screen and (max-width: 360px) {
+  .div-collapse-places {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2em;
+  }
+  .places-collapse-text {
+    width: 12em;
+    margin-top: -2em;
+  }
+
+  .places-div-title-collapse {
+    width: 13em;
+    margin-bottom: 2em;
+  }
 }

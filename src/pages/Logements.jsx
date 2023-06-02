@@ -54,12 +54,14 @@ function Logements() {
           text={place.description}
           classTitle="places-div-title-collapse"
           classText="places-collapse-text"
+          classFlex=""
         />
         <Collapse
           title="Équipements"
           text={place.equipments}
           classTitle="places-div-title-collapse"
           classText="places-collapse-text"
+          classFlex=""
         />
       </div>
     </div>
