@@ -6,3 +6,17 @@
 .rank-colored {
   color: #ff6060;
 }
+
+/*Petit ordinateur */
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .ranking {
+    font-size: 18px;
+  }
+}
+
+/* Tablette*/
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .ranking {
+    font-size: 16px;
+  }
+}

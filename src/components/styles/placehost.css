@@ -15,3 +15,33 @@
   font-size: 18px;
   margin-right: 1em;
 }
+
+/*Petit ordinateur */
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .host {
+    margin-bottom: 0.5em;
+  }
+  .place-host-picture {
+    width: 65px;
+    height: 65px;
+  }
+
+  .place-host-name {
+    font-size: 16px;
+  }
+}
+
+/* Tablette*/
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .host {
+    margin: 2em 0em 0em 0em;
+  }
+  .place-host-picture {
+    width: 55px;
+    height: 55px;
+  }
+
+  .place-host-name {
+    font-size: 14px;
+  }
+}

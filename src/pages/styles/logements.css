@@ -4,33 +4,41 @@
   margin-left: 1.5em;
 }
 
-/* Div du titre et du host  */
-.div-title-and-host {
+/* Div du titre et des tags  */
+.div-title-and-tags {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 1em;
 }
-
-/* Tags et rank  */
+/*Tags*/
 .tags-div {
   display: flex;
   width: 100%;
 }
 
+/*Div du rank et du host*/
+.host-and-rank {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: -10em 2em 0em 2em;
+}
+/* Rank  */
 .div-rank-tags {
   display: flex;
   justify-content: space-between;
 }
 .div-rank {
   display: flex;
+  margin-top: 2em;
 }
 
 /* Collapse div  */
 .div-collapse-places {
   display: flex;
   justify-content: space-between;
+  margin: 6em 1em 0em 1em;
 }
-
 /* Collapse titre et texte  */
 .places-collapse-text {
   width: max(35em);
@@ -40,14 +48,29 @@
   width: max(37em);
 }
 
-/* Taille collapse sur petit écran ordinateur*/
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+/* Taille collapse sur écran ordinateur moyen */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
   .places-collapse-text {
-    width: 24em;
+    width: 27em;
   }
 
   .places-div-title-collapse {
-    width: 25em;
+    width: 29em;
+  }
+}
+
+/* Taille collapse sur petit écran ordinateur */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .div-collapse-places {
+    margin-right: 2em;
+  }
+
+  .places-collapse-text {
+    width: 23em;
+  }
+
+  .places-div-title-collapse {
+    width: 24em;
   }
 }
 
@@ -107,4 +130,8 @@
     width: 13em;
     margin-bottom: 2em;
   }
+}
+
+/* Mediaqueries hors collapse pour ordinateur plus petit que 1400px*/
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
 }

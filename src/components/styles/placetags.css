@@ -10,3 +10,18 @@
   margin-right: 1em;
   text-align: center;
 }
+
+/*Petit ordinateur */
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .place-tags {
+    font-size: 10px;
+  }
+}
+
+/* Tablette*/
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .place-tags {
+    width: 15%;
+    font-size: 8px;
+  }
+}

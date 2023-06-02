@@ -11,3 +11,13 @@
   font-size: 24px;
   font-weight: 500;
 }
+
+/* Tablette*/
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .place-title {
+    font-size: 18px;
+  }
+  .place-location {
+    font-size: 14px;
+  }
+}

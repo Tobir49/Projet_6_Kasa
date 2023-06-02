@@ -23,20 +23,22 @@ function Logements() {
 
   return (
     <div className="width-all">
-      <div>
+      <header>
         <Slideshow pictures={data.pictures} />
-      </div>
+      </header>
+
       <div>
-        <div className="div-title-and-host">
+        <div className="title-and-tags"></div>
+        <div className="div-title-and-tags">
           <PlaceTitle title={place.title} location={place.location} />
-          <PlaceHost host={place.host} />
-        </div>
-        <div className="div-rank-tags">
           <div className="tags-div">
             {place.tags.map((tag) => (
               <PlaceTags key={tag} tags={tag} />
             ))}
           </div>
+        </div>
+        <div className="host-and-rank">
+          <PlaceHost host={place.host} />
           <div className="div-rank">
             {rankNumbers.map((e, data) => (
               <PlaceRank
