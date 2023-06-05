@@ -24,7 +24,15 @@ function Collapse(props) {
       </div>
       {open && (
         <p className={`${props.classText} classDefaultUseTextCollapse`}>
-          {props.text}
+          {props.isList ? (
+            <ul>
+              {props.text.map((element, index) => (
+                <li key={index}>{element}</li>
+              ))}
+            </ul>
+          ) : (
+            props.text
+          )}
         </p>
       )}
     </div>

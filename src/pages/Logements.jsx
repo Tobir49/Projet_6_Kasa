@@ -8,7 +8,7 @@ import PlaceTags from "../components/PlaceTags";
 import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
 import PlaceRank from "../components/PlaceRank";
-import Slideshow from "../components/Slideshow";
+// import Slideshow from "../components/Slideshow";
 
 function Logements() {
   const { id } = useParams();
@@ -23,12 +23,9 @@ function Logements() {
 
   return (
     <div className="width-all">
-      <header>
-        <Slideshow pictures={data.pictures} />
-      </header>
+      <header>{/* <Slideshow pictures={data.pictures} /> */}</header>
 
       <div>
-        <div className="title-and-tags"></div>
         <div className="div-title-and-tags">
           <PlaceTitle title={place.title} location={place.location} />
           <div className="tags-div">
@@ -40,10 +37,10 @@ function Logements() {
         <div className="host-and-rank">
           <PlaceHost host={place.host} />
           <div className="div-rank">
-            {rankNumbers.map((e, data) => (
+            {rankNumbers.map((element) => (
               <PlaceRank
-                key={data}
-                color={parseInt(place.rating) >= e ? "rank-colored" : " "}
+                key={element}
+                color={parseInt(place.rating) >= element ? "rank-colored" : " "}
               />
             ))}
           </div>
@@ -56,15 +53,14 @@ function Logements() {
           text={place.description}
           classTitle="places-div-title-collapse"
           classText="places-collapse-text"
-          classFlex=""
         />
         <Collapse
           title="Équipements"
           text={place.equipments}
           classTitle="places-div-title-collapse"
           classText="places-collapse-text"
-          classFlex=""
-        />
+          isList={true}
+        ></Collapse>
       </div>
     </div>
   );

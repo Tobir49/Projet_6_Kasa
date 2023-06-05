@@ -77,11 +77,13 @@
 /* Taille collapse sur petit ordinateur et tablette*/
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .places-collapse-text {
-    width: 13em;
+    width: 18em;
+    font-size: 14px;
+    padding-bottom: 1em;
   }
 
   .places-div-title-collapse {
-    width: 14em;
+    width: 15em;
   }
 }
 
@@ -89,6 +91,7 @@
 @media screen and (min-width: 450px) and (max-width: 700px) {
   .places-collapse-text {
     width: 11em;
+    padding-bottom: 1em;
   }
 
   .places-div-title-collapse {
@@ -124,6 +127,7 @@
   .places-collapse-text {
     width: 12em;
     margin-top: -2em;
+    padding-bottom: 1em;
   }
 
   .places-div-title-collapse {
