@@ -1,0 +1,33 @@
+.div-slideshow {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-slideshow {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+  align-self: center;
+  margin-top: 2em;
+}
+
+.arrow-left,
+.arrow-right {
+  /* font-size: 100px;
+  position: absolute;
+  top: 37%;
+  color: white; */
+}
+
+.arrow-left {
+  /* right: 90%; */
+}
+
+.arrow-right {
+  /* right: 15%; */
+}
+
+.number-slideshow {
+  position: absolute;
+}

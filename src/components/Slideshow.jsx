@@ -1,10 +1,14 @@
 import React from "react";
-// import { useState } from "react";
+import { useState } from "react";
+import "./styles/slideshow.css";
 // import data from "../data/logements.json";
 
-// const [picture, setPicture] = useSate(0);
-
 function Slideshow(props) {
+  const [picture, setPicture] = useState(0);
+
+  const buttonHandler = () => {
+    setPicture((current) => !current);
+  };
   // const nextPicture = () => {
   //   if (picture === data.pictures.length - 1) {
   //     setPicture(0);
@@ -22,15 +26,21 @@ function Slideshow(props) {
   // };
 
   return (
-    <div>
-      <img src={props.pictures} alt="places" />
+    <div className="div-slideshow">
+      <img src={props.pictures} alt="places" className="picture-slideshow" />
       <div>
-        <i className="fa-solid fa-chevron-left"></i>
+        <i
+          className="fa-solid fa-chevron-left arrow-left"
+          onClick={buttonHandler}
+        ></i>
 
-        <i className="fa-solid fa-chevron-right"></i>
+        <i
+          className="fa-solid fa-chevron-right arrow-right"
+          onClick={buttonHandler}
+        ></i>
       </div>
       <div>
-        <p>
+        <p className="number-slideshow">
           {props.number}/{props.total}
         </p>
       </div>

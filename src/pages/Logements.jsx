@@ -24,7 +24,7 @@ function Logements() {
   return (
     <div className="width-all">
       <header>
-        <Slideshow pictures={data.pictures} />
+        <Slideshow pictures={place.pictures} />
       </header>
 
       <div>
