@@ -1,29 +1,7 @@
 import React from "react";
-// import { useState } from "react";
 import "./styles/slideshow.css";
-// // import data from "../data/logements.json";
 
 // function Slideshow(props) {
-//   const [picture, setPicture] = useState(0);
-
-//   const buttonHandler = () => {
-//     setPicture((current) => !current);
-//   };
-//   // const nextPicture = () => {
-//   //   if (picture === data.pictures.length - 1) {
-//   //     setPicture(0);
-//   //   } else {
-//   //     setPicture(picture + 1);
-//   //   }
-//   // };
-
-//   // const previousPicture = () => {
-//   //   if (picture === 0) {
-//   //     setPicture(data.pictures.length - 1);
-//   //   } else {
-//   //     setPicture(picture - 1);
-//   //   }
-//   // };
 
 //   return (
 //     <div className="div-slideshow">
@@ -48,7 +26,6 @@ import "./styles/slideshow.css";
 //   );
 // }
 
-// export default Slideshow;
 function Slideshow(props) {
   return <img className={props.className} src={props.src} alt="slideshow" />;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import data from "../data/logements.json";
 import "./styles/logements.css";
 import Error from "../pages/Error";
@@ -12,10 +13,30 @@ import Slideshow from "../components/Slideshow";
 import Chevron from "../components/Chevron";
 
 function Logements() {
+  //Constantes pour la route (url)
   const { id } = useParams();
   const place = data.find((place) => place.id === id); //Afficher une page tant qu'il y a un id différent dans le fichier json
 
+  //Constante pour le rank
   const rankNumbers = [1, 2, 3, 4, 5];
+
+  //Constantes pour le slideshow
+  const [picture, setPicture] = useState(0);
+
+  const nextPicture = () => {
+    if (picture === place.pictures.length - 1) {
+      setPicture(0);
+    } else {
+      setPicture(picture + 1);
+    }
+  };
+  const previousPicture = () => {
+    if (picture === 0) {
+      setPicture(place.pictures.length - 1);
+    } else {
+      setPicture(picture - 1);
+    }
+  };
 
   //Important de l'écrire, car même si un id n'existe pas, une page d'erreur (react et non Error.jsx) s'affichera
   if (!place) {
@@ -27,14 +48,17 @@ function Logements() {
       <header>
         <div>
           <div>
-            {/* Manque props */}
-            <Chevron />
-            <Chevron />
+            <Chevron
+              classChevron="fa-solid fa-chevron-left"
+              onClick={previousPicture}
+            />
+            <Chevron
+              classChevron="fa-solid fa-chevron-right"
+              onClick={nextPicture}
+            />
           </div>
           {place.pictures.map((element, index) => (
-            <Slideshow />
-            //Manque props
-            //Manque element et index pour .map
+            <Slideshow className="" key={index} src={element} />
           ))}
           <p>1/4</p>
         </div>
