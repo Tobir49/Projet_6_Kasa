@@ -49,11 +49,11 @@ function Logements() {
         <div className="div-slideshow">
           <div>
             <Chevron
-              classChevron="fa-solid fa-chevron-left"
+              classChevron="fa-solid fa-chevron-left arrow-left"
               onClick={previousPicture}
             />
             <Chevron
-              classChevron="fa-solid fa-chevron-right"
+              classChevron="fa-solid fa-chevron-right arrow-right"
               onClick={nextPicture}
             />
           </div>

@@ -8,7 +8,7 @@
 .div-title-and-tags {
   display: flex;
   flex-direction: column;
-  margin: 0em 1em 1em 1em;
+  margin: 1em;
 }
 /*Tags*/
 .tags-div {

@@ -1,0 +1,16 @@
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  font-size: 7vw;
+  cursor: pointer;
+  top: 40%;
+  color: white;
+}
+
+.arrow-left {
+  left: 1em;
+}
+
+.arrow-right {
+  right: 1em;
+}
