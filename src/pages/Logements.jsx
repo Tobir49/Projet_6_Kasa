@@ -9,6 +9,7 @@ import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
 import PlaceRank from "../components/PlaceRank";
 import Slideshow from "../components/Slideshow";
+import Chevron from "../components/Chevron";
 
 function Logements() {
   const { id } = useParams();
@@ -24,7 +25,19 @@ function Logements() {
   return (
     <div className="width-all">
       <header>
-        <Slideshow pictures={place.pictures} />
+        <div>
+          <div>
+            {/* Manque props */}
+            <Chevron />
+            <Chevron />
+          </div>
+          {place.pictures.map((element, index) => (
+            <Slideshow />
+            //Manque props
+            //Manque element et index pour .map
+          ))}
+          <p>1/4</p>
+        </div>
       </header>
 
       <div>

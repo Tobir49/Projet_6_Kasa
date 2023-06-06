@@ -5,6 +5,7 @@
   background-color: #f6f6f6;
   border-radius: 1.5em;
   padding: 3em 1em 1em 0em;
+  /* z-index: 0; */
 }
 
 .div-card {
@@ -14,11 +15,12 @@
   flex-direction: column;
   border-radius: 10px;
   margin: 0em 1em 2em 3em;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
-  );
+  ); */
+  /* z-index: -1; */
 }
 
 .img-card {
@@ -26,7 +28,7 @@
   height: 340px;
   object-fit: cover;
   border-radius: 10px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .card-title {
@@ -34,13 +36,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin: -2.8em 0em 0em 1em;
-  /* background: linear-gradient(black, black); */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  ); */
 }
 
 .link {
