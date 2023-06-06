@@ -46,7 +46,7 @@ function Logements() {
   return (
     <div className="width-all">
       <header>
-        <div>
+        <div className="div-slideshow">
           <div>
             <Chevron
               classChevron="fa-solid fa-chevron-left"
@@ -58,7 +58,13 @@ function Logements() {
             />
           </div>
           {place.pictures.map((element, index) => (
-            <Slideshow className="" key={index} src={element} />
+            <Slideshow
+              className={`picture-slideshow ${
+                index === picture ? "visible-slideshow" : ""
+              }`}
+              key={index}
+              src={element}
+            />
           ))}
           <p>1/4</p>
         </div>
