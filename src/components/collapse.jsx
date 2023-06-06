@@ -23,7 +23,7 @@ function Collapse(props) {
         )}
       </div>
       {open && (
-        <p className={`${props.classText} classDefaultUseTextCollapse`}>
+        <div className={`${props.classText} classDefaultUseTextCollapse`}>
           {props.isList ? (
             <ul>
               {props.text.map((element, index) => (
@@ -33,7 +33,7 @@ function Collapse(props) {
           ) : (
             props.text
           )}
-        </p>
+        </div>
       )}
     </div>
   );

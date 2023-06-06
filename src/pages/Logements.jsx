@@ -8,7 +8,7 @@ import PlaceTags from "../components/PlaceTags";
 import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
 import PlaceRank from "../components/PlaceRank";
-// import Slideshow from "../components/Slideshow";
+import Slideshow from "../components/Slideshow";
 
 function Logements() {
   const { id } = useParams();
@@ -23,7 +23,9 @@ function Logements() {
 
   return (
     <div className="width-all">
-      <header>{/* <Slideshow pictures={data.pictures} /> */}</header>
+      <header>
+        <Slideshow pictures={data.pictures} />
+      </header>
 
       <div>
         <div className="div-title-and-tags">
