@@ -49,11 +49,19 @@ function Logements() {
         <div className="div-slideshow">
           <div>
             <Chevron
-              classChevron="fa-solid fa-chevron-left arrow-left"
+              classChevron={
+                place.pictures.length > 1
+                  ? "fa-solid fa-chevron-left arrow-left"
+                  : null
+              }
               onClick={previousPicture}
             />
             <Chevron
-              classChevron="fa-solid fa-chevron-right arrow-right"
+              classChevron={
+                place.pictures.length > 1
+                  ? "fa-solid fa-chevron-right arrow-right"
+                  : null
+              }
               onClick={nextPicture}
             />
           </div>
@@ -66,7 +74,11 @@ function Logements() {
               src={element}
             />
           ))}
-          <p>1/4</p>
+          <p className="number-total-slideshow">
+            {place.pictures.length > 1
+              ? `${picture + 1}/${place.pictures.length}`
+              : null}
+          </p>
         </div>
       </header>
 

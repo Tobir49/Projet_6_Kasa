@@ -2,6 +2,8 @@
   margin-inline: 40px;
   height: 415px;
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .div-slideshow .picture-slideshow {
@@ -14,4 +16,13 @@
 
 .div-slideshow .picture-slideshow.visible-slideshow {
   display: block;
+}
+
+.number-total-slideshow {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 500;
+  width: 50px;
+  align-self: center;
+  margin-top: -3em;
 }
