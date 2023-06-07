@@ -53,6 +53,7 @@ function Logements() {
                 place.pictures.length > 1
                   ? "fa-solid fa-chevron-left arrow-left"
                   : null
+                //Permet de ne pas afficher de flèche si 1 seule image
               }
               onClick={previousPicture}
             />
