@@ -8,7 +8,8 @@ function Banner(props) {
         src={props.src}
         alt={props.alt}
         className={`${props.classHeight} banner`}
-        //Possibilité d'ajouter une classe en props si l'on souhaite faire 2 composants avec un style différent
+        //Possibilité d'ajouter une classe en props. 'classHeight' n'est pas obligé d'être défini,
+        //ce qui permet d'avoir un style différent pour un même composant
       />
       {props.title ? <p className="banner-title">{props.title}</p> : ""}
     </div>

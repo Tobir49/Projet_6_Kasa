@@ -13,21 +13,28 @@ import Slideshow from "../components/Slideshow";
 import Chevron from "../components/Chevron";
 
 function Logements() {
-  //Constantes pour la route (url)
+  ////////DÉFINITIONS DE VARIABLES\\\\\\\\
+
+  //Constante pour la route (url), appelée dans 'index.js'
   const { id } = useParams();
-  const place = data.find((place) => place.id === id); //Afficher une page tant qu'il y a un id différent dans le fichier json
+
+  //Constante qui sert à retrouver n'importe quel élément (objet) du 'data' selon l'id
+  const place = data.find((place) => place.id === id);
 
   //Constante pour le rank
   const rankNumbers = [1, 2, 3, 4, 5];
 
   //Constantes pour le slideshow
   const [picture, setPicture] = useState(0);
+  //La variable 'picture'=0 soit le premier élément du tableau
+  //La variable 'setPicture' sert à modifier la valeur de 'picture'
 
   const nextPicture = () => {
     if (picture === place.pictures.length - 1) {
       setPicture(0);
     } else {
       setPicture(picture + 1);
+      //On donne à 'picture' la src de l'image suivante à celle active dans le tableau
     }
   };
   const previousPicture = () => {
@@ -35,14 +42,16 @@ function Logements() {
       setPicture(place.pictures.length - 1);
     } else {
       setPicture(picture - 1);
+      //On donne à 'picture' la src de l'image précédente à celle active dans le tableau
     }
   };
 
-  //Important de l'écrire, car même si un id n'existe pas, une page d'erreur (react et non Error.jsx) s'affichera
+  ////////Si l'id n'est pas trouvé --> page d'erreur\\\\\\\\
   if (!place) {
     return <Error />;
   }
 
+  ////////CODE DES LOGEMENTS\\\\\\\\
   return (
     <div className="width-all">
       <header>
@@ -53,7 +62,7 @@ function Logements() {
                 place.pictures.length > 1
                   ? "fa-solid fa-chevron-left arrow-left"
                   : null
-                //Permet de ne pas afficher de flèche si 1 seule image
+                //Permet de ne pas afficher de flèche si 1 seule image dans le tableau 'pictures'
               }
               onClick={previousPicture}
             />
@@ -69,7 +78,9 @@ function Logements() {
           {place.pictures.map((element, index) => (
             <Slideshow
               className={`picture-slideshow ${
+                //(display:none)
                 index === picture ? "visible-slideshow" : ""
+                //Si index = valeur de picture, visible-slideshow est ajoutée (display:block), sinon, aucune classe (donc display:none).
               }`}
               key={index}
               src={element}
@@ -79,6 +90,7 @@ function Logements() {
             {place.pictures.length > 1
               ? `${picture + 1}/${place.pictures.length}`
               : null}
+            {/* Ajouter un compteur d'images s'il y a plusieurs images ou non */}
           </p>
         </div>
       </header>
@@ -90,6 +102,7 @@ function Logements() {
             {place.tags.map((tag) => (
               <PlaceTags key={tag} tags={tag} />
             ))}
+            {/* Afficher autant de tags qu'il y en a dans le tableau */}
           </div>
         </div>
         <div className="host-and-rank">
@@ -100,6 +113,7 @@ function Logements() {
                 key={element}
                 color={parseInt(place.rating) >= element ? "rank-colored" : " "}
               />
+              //"rank-colored" est ajoutée si la valeur place.rating >= à l'élément actuel du tableau rankNumbers.
             ))}
           </div>
         </div>
