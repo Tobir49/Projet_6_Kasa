@@ -9,13 +9,13 @@ const Nav = () => {
       <header>
         <nav className="header-nav">
           <Logo />
-          <ul className="nav-banner">
-            <li className="li-banner">
+          <ul className="ul-header">
+            <li className="li-header">
               <Link to="/home" className="a-header">
                 Accueil
               </Link>
             </li>
-            <li className="li-banner">
+            <li className="li-header">
               <Link to="/about" className="a-header">
                 À propos
               </Link>

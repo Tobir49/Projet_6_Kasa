@@ -1,16 +1,16 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 1vw;
+  width: 100%;
 }
 
-.nav-banner {
+.ul-header {
   display: flex;
-  width: 30%;
+  margin-right: 3vw;
 }
 
 .a-header {
-  text-decoration: none;
   color: #ff6060;
 }
 
@@ -22,47 +22,39 @@
   border-bottom: 1px solid #ff6060;
 }
 
-.li-banner {
+.li-header {
   margin: 1.5em 3em 0em 3em;
-  list-style-type: none;
-  font-weight: 400;
 }
 
-@media screen and (min-width: 750px) and (max-width: 1200px) {
-  .nav-banner {
-    width: 37%;
-  }
-
-  .li-banner {
-    margin: 0.5em 2em 0em 2em;
+/*Mediaqueries*/
+@media screen and (max-width: 1100px) {
+  .ul-header {
+    font-size: 2vw;
+    margin-top: 0vw;
   }
 }
 
-/* Pour les téléphones grand écran */
-@media screen and (min-width: 360px) and (max-width: 750px) {
-  .nav-banner {
-    width: 50%;
-    height: 2.2em;
-  }
-
-  .li-banner {
-    margin: 0.5em 0em 0em 1em;
-    font-size: 14px;
-    text-transform: uppercase;
+@media screen and (max-width: 560px) {
+  .ul-header {
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
   }
 }
 
-/* Pour les téléphones petit écran */
-@media screen and (max-width: 360px) {
-  .nav-banner {
-    width: 80%;
-    height: 4em;
-    margin-left: -1em;
+@media screen and (max-width: 425px) {
+  .ul-header {
+    margin-top: 2.3vw;
   }
+}
 
-  .li-banner {
-    margin: 0.5em 0em 0em 1em;
-    font-size: 13px;
-    text-transform: uppercase;
+@media screen and (max-width: 380px) {
+  .ul-header {
+    margin-top: 3vw;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ul-header {
+    margin-top: 5vw;
   }
 }

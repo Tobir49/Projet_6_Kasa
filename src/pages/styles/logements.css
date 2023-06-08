@@ -39,11 +39,8 @@
   justify-content: space-between;
   margin: 4em 1em 0em 1em;
 }
-/* Collapse titre et texte  */
-li {
-  list-style-type: none;
-}
 
+/* Collapse titre et texte  */
 ul {
   margin: 0em 0em 0em -2em;
 }

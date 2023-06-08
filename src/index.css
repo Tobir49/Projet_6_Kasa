@@ -1,9 +1,14 @@
 * {
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 h1,
 h2,
 h3 {
   color: #ff6060;
+}
+
+li {
+  list-style-type: none;
 }
