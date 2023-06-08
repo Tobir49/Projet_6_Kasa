@@ -34,6 +34,7 @@
   }
 }
 
+/*Marge du <ul> par rapport au logo à partir de 560px*/
 @media screen and (max-width: 560px) {
   .ul-header {
     font-size: 2.5vw;

@@ -20,6 +20,12 @@
   color: #ff6060;
   font-size: 1.5vw;
   margin: 5vw 0vw 2vw 0vw;
+  border-bottom: 1px solid #ff6060;
+  transition: border-width 0.3s linear;
+}
+
+.error-link:hover {
+  border-bottom: 0px;
 }
 
 /* Pour les téléphones */
