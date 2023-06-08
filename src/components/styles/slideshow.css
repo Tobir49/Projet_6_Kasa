@@ -27,6 +27,7 @@
   margin-top: -3em;
 }
 
+/*///////Mediaqueries\\\\\\\*/
 @media screen and (max-width: 950px) {
   .div-slideshow {
     height: 315px;

@@ -95,7 +95,7 @@ function Logements() {
         </div>
       </header>
 
-      <div>
+      <div className="div-before-collapse">
         <div className="div-title-and-tags">
           <PlaceTitle title={place.title} location={place.location} />
           <div className="tags-div">

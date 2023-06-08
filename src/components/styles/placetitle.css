@@ -1,17 +1,16 @@
 .place-location {
-  color: #ff6060;
   font-size: 16px;
   font-weight: 500;
 }
 
 .place-title {
-  color: #ff6060;
   font-size: 24px;
   font-weight: 500;
 }
 
+/* Mediaqueries*/
 /* Tablette*/
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .place-title {
     font-size: 18px;
   }
@@ -21,23 +20,12 @@
 }
 
 /* Mobile grand écran*/
-@media screen and (min-width: 360px) and (max-width: 600px) {
-  .place-title {
-    font-size: 16px;
-    margin: 0em 1em 0em 0em;
-  }
-  .place-location {
-    font-size: 14px;
-  }
-}
-
-/* Mobile petit écran*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 550px) {
   .place-title {
     font-size: 15px;
-    margin-left: 0em;
+    width: 90%;
   }
   .place-location {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

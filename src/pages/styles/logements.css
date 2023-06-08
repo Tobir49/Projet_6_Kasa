@@ -1,8 +1,6 @@
-/*Marge du logement */
-/* .width-all {
-  width: 97%;
-  margin-left: 1.5em;
-} */
+.div-before-collapse {
+  margin-left: 1em;
+}
 
 /* ///////Div du titre et des tags\\\\\\\  */
 .div-title-and-tags {
@@ -13,7 +11,6 @@
 /*Tags*/
 .tags-div {
   display: flex;
-  width: 100%;
 }
 
 /*///////Div du rank et du host\\\\\\\*/
