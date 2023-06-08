@@ -1,8 +1,8 @@
 /*Marge du logement */
-.width-all {
+/* .width-all {
   width: 97%;
   margin-left: 1.5em;
-}
+} */
 
 /* ///////Div du titre et des tags\\\\\\\  */
 .div-title-and-tags {
@@ -73,7 +73,7 @@ ul {
   }
   .width-logement-collapse {
     width: max(85%);
-    margin-left: 1.5em;
+    margin-left: 3.5em;
   }
   .places-collapse-title {
     margin-top: 1em;

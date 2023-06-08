@@ -2,6 +2,7 @@
   margin-inline: 40px;
   height: 415px;
   margin-top: 2em;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -24,4 +25,36 @@
   width: 50px;
   align-self: center;
   margin-top: -3em;
+}
+
+@media screen and (max-width: 950px) {
+  .div-slideshow {
+    height: 315px;
+  }
+  .number-total-slideshow {
+    margin-top: -2em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .div-slideshow {
+    max-height: 255px;
+    height: 50vw;
+    width: 85%;
+    margin-left: 1.5em;
+  }
+
+  .div-slideshow .picture-slideshow {
+    border-radius: 10px;
+  }
+
+  .number-total-slideshow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .div-slideshow {
+    margin-left: 1.2em;
+  }
 }
