@@ -7,7 +7,6 @@
 
 .error-title {
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 10em;
   margin-bottom: 0em;
@@ -15,14 +14,12 @@
 
 .error-subtitle {
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
 }
 
 .error-link {
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-top: 5em;
 }

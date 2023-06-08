@@ -23,6 +23,6 @@ export default function App() {
   );
 }
 
-/////////On place les routes créées plus haut, à la place de la <div id='root'> dans le HTML\\\\\\\\\\ 
+/////////On place la fonction <App/>, dans la <div id='root'> du HTML\\\\\\\\\\ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
