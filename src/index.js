@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
 import Logements from "./pages/Logements";
+import "./index.css";
 
 /////////Routes pour les différentes pages\\\\\\\\\\ 
 export default function App() {
