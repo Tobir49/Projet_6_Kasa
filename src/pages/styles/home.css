@@ -13,6 +13,6 @@
 /* Place du contenu sur petit mobile */
 @media screen and (max-width: 360px) {
   .div-home {
-    margin-top: -5em;
+    margin-top: 0em;
   }
 }

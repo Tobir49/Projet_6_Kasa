@@ -123,14 +123,16 @@ function Logements() {
         <Collapse
           title="Description"
           text={place.description}
-          classTitle="places-div-title-collapse"
+          classTitle="places-collapse-title"
           classText="places-collapse-text"
+          classFlex="width-logement-collapse"
         />
         <Collapse
           title="Équipements"
           text={place.equipments}
-          classTitle="places-div-title-collapse"
+          classTitle="places-collapse-title"
           classText="places-collapse-text"
+          classFlex="width-logement-collapse"
           isList={true}
         ></Collapse>
       </div>
