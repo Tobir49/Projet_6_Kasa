@@ -6,7 +6,7 @@
 
 .banner {
   width: 90%;
-  height: 12em;
+  height: 15vw;
   object-fit: cover;
   border-radius: 1.5em;
   mix-blend-mode: darken;
@@ -16,27 +16,14 @@
 .banner-title {
   color: white;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 4vw;
   position: absolute;
-  top: 3.4em;
+  align-self: center;
 }
 
-/* Taille de la bannière et place du texte pour tablette et petit écran */
-@media screen and (min-width: 740px) and (max-width: 1200px) {
-  .banner {
-    width: 90%;
-    height: 9em;
-  }
-
-  .banner-title {
-    font-size: 40px;
-    position: absolute;
-    top: 2.8em;
-  }
-}
-
-/* Taille de la bannière et place du texte pour mobile */
-@media screen and (min-width: 360px) and (max-width: 740px) {
+/* //////Mediaqueries\\\\\\ */
+/* Mobile */
+@media screen and (max-width: 550px) {
   .banner {
     width: 90%;
     height: 7em;
@@ -44,23 +31,7 @@
   }
 
   .banner-title {
-    font-size: 24px;
-    top: 4.6em;
-    width: 80%;
-  }
-}
-
-/* Taille de la bannière et place du texte pour petit mobile */
-@media screen and (max-width: 360px) {
-  .banner {
-    width: 90%;
-    height: 6em;
-    border-radius: 10px;
-  }
-
-  .banner-title {
-    font-size: 18px;
-    top: 5.3em;
+    font-size: 6vw;
     width: 80%;
   }
 }
