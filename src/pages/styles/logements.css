@@ -74,27 +74,32 @@ ul {
   }
   .places-collapse-title {
     margin-top: 1em;
+    font-size: 10px;
   }
   .places-collapse-text {
     margin-bottom: 2em;
+    font-size: 11px;
+  }
+  ul {
+    margin-left: -3em;
   }
 }
 
 /*///////Mediaqueries hors collapse\\\\\\\*/
 /* Mobile grand écran */
-@media screen and (min-width: 360px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  .div-rank {
+    margin-bottom: 0.5em;
+  }
   .host-and-rank {
     justify-content: space-between;
     flex-direction: row-reverse;
-    margin: 0em 2em 0em 2em;
+    margin: -2.5em 1em -3em 1em;
   }
 }
 
-/* Mobile petit écran*/
 @media screen and (max-width: 360px) {
   .host-and-rank {
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin: 0em 2em 0em 2em;
+    margin: -2.5em 0.5em -4em 0.5em;
   }
 }

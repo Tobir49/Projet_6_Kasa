@@ -1,36 +1,30 @@
 .ranking {
   margin: 0.2em 0.4em 0em 0em;
   color: #e3e3e3;
+  font-size: 18px;
 }
 
 .rank-colored {
   color: #ff6060;
 }
 
-/*Petit ordinateur */
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
-  .ranking {
-    font-size: 18px;
-  }
-}
-
-/* Tablette*/
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+/*/////Mediaqueries\\\\\\ */
+/* Petit ordinateur et tablette*/
+@media screen and (max-width: 900px) {
   .ranking {
     font-size: 16px;
   }
 }
 
-/* Mobile grand écran*/
-@media screen and (min-width: 360px) and (max-width: 600px) {
+/* Mobile*/
+@media screen and(max-width: 600px) {
   .ranking {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
-/* Mobile petit écran*/
 @media screen and (max-width: 360px) {
   .ranking {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
