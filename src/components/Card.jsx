@@ -5,7 +5,7 @@ import "./styles/card.css";
 function Card(props) {
   return (
     <div>
-      <Link to={`/places/${props.id}`} className="link">
+      <Link to={`/places/${props.id}`}>
         {/* Accéder à la page de chaque logement grâce à l'id  */}
         <div className="div-card">
           <img src={props.cover} alt="logements" className="img-card" />
