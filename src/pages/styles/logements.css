@@ -11,6 +11,7 @@
 /*Tags*/
 .tags-div {
   display: flex;
+  width: 80%;
 }
 
 /*///////Div du rank et du host\\\\\\\*/
@@ -87,6 +88,13 @@ ul {
 
 /*///////Mediaqueries hors collapse\\\\\\\*/
 /* Mobile grand écran */
+
+@media screen and (max-width: 1200px) {
+  .tags-div {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .div-rank {
     margin-bottom: 0.5em;
@@ -95,6 +103,9 @@ ul {
     justify-content: space-between;
     flex-direction: row-reverse;
     margin: -2.5em 1em -3em 1em;
+  }
+  .tags-div {
+    width: 92%;
   }
 }
 

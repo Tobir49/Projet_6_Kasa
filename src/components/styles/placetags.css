@@ -2,7 +2,7 @@
   background-color: #ff6060;
   color: white;
   width: 12%;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 500;
   padding: 0.5vw 2.7vw 0.5vw 2.7vw;
   border-radius: 10px;
@@ -20,15 +20,15 @@
 /* Mobile grand écran*/
 @media screen and (max-width: 600px) {
   .place-tags {
-    width: 27%;
-    font-size: 7px;
+    width: 20%;
+    font-size: 1vw;
     border-radius: 5px;
   }
 }
 
 /* Mobile petit écran*/
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .place-tags {
     font-size: 6px;
   }
-}
+} */

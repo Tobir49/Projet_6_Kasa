@@ -4,15 +4,15 @@ import "./styles/card.css";
 
 function Card(props) {
   return (
-    <div>
-      <Link to={`/places/${props.id}`}>
-        {/* Accéder à la page de chaque logement grâce à l'id  */}
-        <div className="div-card">
-          <img src={props.cover} alt="logements" className="img-card" />
-          <span className="card-title">{props.title}</span>
-        </div>
-      </Link>
-    </div>
+    <Link
+      to={`/places/${props.id}`}
+      className="div-card"
+      onClick={() => window.scroll(0, 0)}
+    >
+      {/* Accéder à la page de chaque logement grâce à l'id  */}
+      <img src={props.cover} alt="logements" className="img-card" />
+      <span className="card-title">{props.title}</span>
+    </Link>
   );
 }
 

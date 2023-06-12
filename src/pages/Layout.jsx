@@ -8,7 +8,7 @@ function Layout() {
     <div>
       <Nav />
       <Footer></Footer>
-      {/* <Navigate to="home" replace={true}/> */}
+      {/* <Navigate to="home" replace={true} /> */}
     </div>
   );
 }

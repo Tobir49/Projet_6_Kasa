@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 import data from "../data/logements.json";
 import "./styles/logements.css";
 import Error from "../pages/Error";
@@ -10,7 +9,6 @@ import PlaceHost from "../components/PlaceHost";
 import Collapse from "../components/Collapse";
 import PlaceRank from "../components/PlaceRank";
 import Slideshow from "../components/Slideshow";
-import Chevron from "../components/Chevron";
 
 function Logements() {
   ////////DÉFINITIONS DE VARIABLES\\\\\\\\
@@ -24,28 +22,6 @@ function Logements() {
   //Constante pour le rank
   const rankNumbers = [1, 2, 3, 4, 5];
 
-  //Constantes pour le slideshow
-  const [picture, setPicture] = useState(0);
-  //La variable 'picture'=0 soit le premier élément du tableau
-  //La variable 'setPicture' sert à modifier la valeur de 'picture'
-
-  const nextPicture = () => {
-    if (picture === place.pictures.length - 1) {
-      setPicture(0);
-    } else {
-      setPicture(picture + 1);
-      //On donne à 'picture' la src de l'image suivante à celle active dans le tableau
-    }
-  };
-  const previousPicture = () => {
-    if (picture === 0) {
-      setPicture(place.pictures.length - 1);
-    } else {
-      setPicture(picture - 1);
-      //On donne à 'picture' la src de l'image précédente à celle active dans le tableau
-    }
-  };
-
   ////////Si l'id n'est pas trouvé --> page d'erreur\\\\\\\\
   if (!place) {
     return <Error />;
@@ -55,44 +31,8 @@ function Logements() {
   return (
     <div className="width-all">
       <header>
-        <div className="div-slideshow">
-          <div>
-            <Chevron
-              classChevron={
-                place.pictures.length > 1
-                  ? "fa-solid fa-chevron-left arrow-left"
-                  : null
-                //Permet de ne pas afficher de flèche si 1 seule image dans le tableau 'pictures'
-              }
-              onClick={previousPicture}
-            />
-            <Chevron
-              classChevron={
-                place.pictures.length > 1
-                  ? "fa-solid fa-chevron-right arrow-right"
-                  : null
-              }
-              onClick={nextPicture}
-            />
-          </div>
-          {place.pictures.map((element, index) => (
-            <Slideshow
-              className={`picture-slideshow ${
-                //(display:none)
-                index === picture ? "visible-slideshow" : ""
-                //Si index = valeur de picture, visible-slideshow est ajoutée (display:block), sinon, aucune classe (donc display:none).
-              }`}
-              key={index}
-              src={element}
-            />
-          ))}
-          <p className="number-total-slideshow">
-            {place.pictures.length > 1
-              ? `${picture + 1}/${place.pictures.length}`
-              : null}
-            {/* Ajouter un compteur d'images s'il y a plusieurs images ou non */}
-          </p>
-        </div>
+        <Slideshow pictures={place.pictures} />
+        {/* La prop = place.pictures */}
       </header>
 
       <div className="div-before-collapse">
